@@ -1,0 +1,223 @@
+/* RESET CSS, ADD FONTS & FORMATTING */
+body,
+html,
+button {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", "Gotham", "Open Sans", "Arial", "Helvetica",
+        "Roboto", sans-serif;
+}
+
+/* Containers */
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+.content {
+    /* Adds usual content padding */
+    padding: 25px;
+}
+
+/* Flex Display Class */
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS Grid: Page */
+.page {
+    background-color: #ffffff; /* REPLACE THIS FOR PRODUCTION */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.page-header {
+    background-color: #ffffff;
+    padding: 25px;
+}
+#headercontents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sitelogo {
+    max-width: 300px;
+}
+.nav {
+    margin-left: 20px;
+}
+.navbut {
+    padding: 10px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+.navbut:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* BODY */
+.page-body {
+}
+
+/* BODY - SECTION 1 */
+.section1 {
+    max-height: 85vh;
+    height: 85vh;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #202020;
+}
+.section2 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* FOOTER */
+.page-footer {
+    min-height: 100px;
+}
+
+/* ACCESSIBILITY */
+#skipnav {
+    position: absolute;
+    transform: translateY(-200%);
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    transition: transform 275ms ease-in;
+    z-index: 100;
+}
+#skipnav:focus {
+    transform: translateY(0%);
+    text-transform: uppercase;
+}
+
+/* SLIDE CAROUSEL */
+.csl-full {
+    position: relative;
+}
+.csl-full img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 0.9;
+}
+.csl-full-center-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 42.5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%); /* iOS */
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 12px #000000;
+    z-index: 10;
+}
+.csl-full-gradient-bottom {
+    position: absolute;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    width: 100vw;
+    height: 85vh;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 45%
+    );
+    background: -webkit-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 45%
+    );
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 45%
+    );
+}
+
+.covid-accordion {
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid white;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+.covid-acc-active,
+.covid-accordion:hover {
+    background-color: #30aa30;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.covid-panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.newsletters a {
+    background-color: #303030;
+    border: none;
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.newsletters .latest {
+    background-color: #0077ff;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.section3 {
+    background-color: #ffffff;
+}
+
+.eventteaserbox {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+}
